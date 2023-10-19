@@ -1,16 +1,17 @@
 @font-face {
-    font-family: Nunito Sans;
-    src: url(/src/fons/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf), format("ttf");
+    font-family: "Nunito Sans";
+    src: url("/src/fonts/NunitoSans-Variable.ttf");
 }
 
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 body{
     background: #F0F5FB;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 a{
@@ -44,12 +45,11 @@ section{
 }
 
 .container {
-    margin: 0px 370px;
+    margin: 0 370px;
 }
 
 .section-title{
     color: #18154B;
-    font-family: Nunito Sans;
     font-size: 36px;
     font-style: normal;
     font-weight: 800;
@@ -68,7 +68,7 @@ section{
 }
 
 .btn-dark:hover{
-    box-shadow: 0px 4px 20px 0px rgba(26, 11, 115, 0.40);
+    box-shadow: 0 4px 20px 0 rgba(26, 11, 115, 0.40);
     transition: all .3s;
 }
 
@@ -82,7 +82,7 @@ section{
 }
 
 .btn-ligth:hover{
-    box-shadow: 0px 4px 30px 0px rgba(255, 255, 255, 0.40);
+    box-shadow: 0 4px 30px 0 rgba(255, 255, 255, 0.40);
     transition: all .3s
 }
 
@@ -92,13 +92,9 @@ section{
     width: 100%;
 }
 
-.header-mobile{
-    display: none;
-}
-
 .header-top {
     background-color: #1A0B73;
-    padding: 10px 0px;
+    padding: 10px 0;
 }
 
 .header-top__content{
@@ -124,16 +120,16 @@ section{
 
 .header-bottom {
     background: #FFFFFF;
-    box-shadow: 0px 4px 20px 0px rgba(0, 7, 94, 0.10);
-    padding: 15px 0px;
+    box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.10);
+    padding: 15px 0;
     transition: all 0.3s;
 }
 
 .header-bottom__active{
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    right: 0;
     transition: all 0.3s;
     z-index: 999;
 }
@@ -147,8 +143,8 @@ section{
 .header-btn{
     color: #FFFFFF;
     padding: 11px 27px;
-    margin: 0px 80px 0px 47px;
-    font-family: Nunito Sans;
+    margin: 0 80px 0 47px;
+    
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
@@ -168,7 +164,7 @@ section{
     align-items: center;
     gap: 10px;
     color: #F0F5FB;
-    font-family: Nunito Sans;
+    
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -196,7 +192,6 @@ section{
 
 .header-nav__item {
     color: var( --main-color-text);
-    font-family: Nunito Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -227,15 +222,18 @@ section{
     cursor: pointer;
 }
 
+#burger{
+    display: none;
+}
+
 .product-counter{
     position: absolute;
-    bottom:30px;
-    right:0px;
+    bottom: 30px;
+    right: 0;
     background: #1A0B73;
     padding: 3px 5px 3px 6px;
     border-radius: 50px;
     color: #FFF;
-    font-family: Inter;
     font-size: 10px;
     font-style: normal;
     font-weight: 500;
@@ -243,7 +241,7 @@ section{
 }
 
 .main {
-    margin: 40px 0px 80px 0px;
+    margin: 40px 0 80px 0;
     min-height: 100vh
 }
 
@@ -257,9 +255,9 @@ section{
 .slider {
     display: flex;
     justify-content: space-between;
-    background: url("../img/image/slider-bg.jpg") no-repeat;
+    background: url(".././img/general-images/slider-bg.jpg") no-repeat;
     border-radius: 10px;
-    box-shadow: 0px 4px 20px 0px rgba(0, 7, 94, 0.10);
+    box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.10);
     max-width: 780px;
     width: 100%;
     height: 440px;
@@ -273,7 +271,7 @@ section{
 
 .slider-title{
     color: #FFFFFF;
-    font-family: Nunito Sans;
+    
     font-size: 38px;
     font-style: normal;
     font-weight: 800;
@@ -285,7 +283,7 @@ section{
 .slider-desc {
     margin-top: 20px;
     color: #FFF;
-    font-family: Nunito Sans;
+    
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -329,8 +327,8 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: url("../img/image/banner-bg.jpg") no-repeat;
-    box-shadow: 0px 4px 20px 0px rgba(0, 7, 94, 0.10);
+    background: url(".././img/general-images/banner-bg.jpg") no-repeat;
+    box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.10);
     padding: 40px 30px 30px 40px;
     border-radius: 10px;
     max-width: 380px;
@@ -345,7 +343,7 @@ section{
 
 .banner-title {
     color: #FFFFFF;
-    font-family: Nunito Sans;
+    
     font-size: 28px;
     font-style: normal;
     font-weight: 800;
@@ -363,7 +361,7 @@ section{
 
 .banner-procent {
     color: #FFFFFF;
-    font-family: Nunito Sans;
+    
     font-size: 56px;
     font-style: normal;
     font-weight: 700;
@@ -373,7 +371,7 @@ section{
 
 .banner-desc {
     color: #FFFFFF;
-    font-family: Nunito Sans;
+    
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -389,7 +387,7 @@ section{
 
 .to-catalog__title {
     color: #18154B;
-    font-family: Nunito Sans;
+    
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -403,7 +401,7 @@ section{
 
 .banner-btn__title {
     color: #FFFFFF;
-    font-family: Nunito Sans;
+    
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -432,8 +430,8 @@ section{
     display: flex;
     gap: 20px;
     padding: 20px 32px 20px 35px;
-    background: url("../img/image/category-bg.jpg") no-repeat;
-    box-shadow: 0px 4px 20px 0px rgba(0, 7, 94, 0.10);
+    background: url(".././img/general-images/category-bg.jpg") no-repeat;
+    box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.10);
     border-radius: 10px;
     max-width: 380px;
     width: 100%;
@@ -447,7 +445,7 @@ section{
 
 .products-name {
     color: #303239;
-    font-family: Nunito Sans;
+    
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -458,17 +456,16 @@ section{
 .advantages {
     display: flex;
     justify-content: space-between;
-    background: url("../img/image/advantages.png") no-repeat;
+    background: url("../img/general-images/advantages.png") no-repeat;
+    background-size: 100% 100%;
     border-radius: 10px;
-    box-shadow: 0px 4px 20px 0px rgba(0, 7, 94, 0.10);
-    width: 100%;
+    box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.10);
     padding: 50px 85px 56px 60px;
 }
 
 .advantages-title {
     width: 341px;
     color: #FFFFFF;
-    font-family: Nunito Sans;
     font-size: 36px;
     font-style: normal;
     font-weight: 800;
@@ -507,7 +504,7 @@ section{
     align-items: start;
     color: #FFFFFF;
     width: 147px;
-    font-family: Nunito Sans;
+    
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -532,7 +529,7 @@ section{
     padding: 15px 16px 30px 15px;
     border-radius: 10px;
     background: #FFFFFF;
-    box-shadow: 0px 4px 20px 0px rgba(0, 7, 94, 0.10);
+    box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.10);
 }
 
 .hit-card__top {
@@ -552,7 +549,7 @@ section{
 
 .hit-name {
     color: #303239;
-    font-family: Nunito Sans;
+    
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -573,7 +570,7 @@ section{
 
 .state-name {
     color: #9B9B9B;
-    font-family: Nunito Sans;
+    
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
@@ -589,7 +586,7 @@ section{
 
 .hit-hit-discount {
     color: #9B9B9B;
-    font-family: Nunito Sans;
+    
     font-size: 10px;
     font-style: normal;
     font-weight: 600;
@@ -614,15 +611,81 @@ section{
 }
 
 .card-btn {
+    font-size: 14px;
+    font-weight: 700;
     padding: 13px 35px 12px 36px;
     margin-top: 10px;
 }
 
-.form-block {
-    background: url("../img/image/form-bg.jpg") no-repeat;
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.about-top{
+    display: flex;
+    gap: 75px;
+}
+
+.about-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-desc{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-desc__text{
+    width: 645px;
+    color: #303239;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+}
+
+.about-right {
+    width: 460px;
     border-radius: 10px;
+    background: radial-gradient(79.47% 52.98% at 60.22% 53.83%, #42E8E0 0%, #42E8E0 3.11%, #308BA7 17.63%, #265587 32.63%, #201A6C 48.03%, #160E5A 63.97%, #11074F 80.79%, #0F054C 100%);
     box-shadow: 0px 4px 20px 0px rgba(0, 7, 94, 0.10);
-    padding: 50px 0px 50px 60px;
+}
+
+.about-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-bottom__item {
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about-item__desc{
+    color: #303239;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    text-align: start;
+}
+
+.form-block {
+    background: url(".././img/general-images/form-bg.jpg") no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.10);
+    padding: 50px 0 50px 60px;
 }
 
 .form-titles{
@@ -633,7 +696,6 @@ section{
 
 .form-title {
     color: #FFFFFF;
-    font-family: Nunito Sans;
     font-size: 28px;
     font-style: normal;
     font-weight: 800;
@@ -644,7 +706,6 @@ section{
 .form-desc {
     margin-top: 10px;
     color: #FFFFFF;
-    font-family: Nunito Sans;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -665,12 +726,11 @@ section{
 
 .form-input {
     width: 240px;
-    padding: 16px 0px 15px 20px;
+    padding: 16px 0 15px 20px;
     border-radius: 50px;
     border: 1px solid rgba(243, 243, 243, 0.70);
     background: rgba(255, 255, 255, 0.30);
     color: #F3F3F3;
-    font-family: Nunito Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -679,7 +739,6 @@ section{
 
 .form-input::placeholder{
     color: #F3F3F3;
-    font-family: Nunito Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -688,7 +747,6 @@ section{
 
 .form-submit {
     color: #18154B;
-    font-family: Nunito Sans;
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
@@ -701,13 +759,15 @@ section{
     gap: 10px;
 }
 
-.form-checkbox {
-    display: none;
+
+.form-checkbox::before{
+    content: " ";
+    width: 14px;
+    height: 14px;
 }
 
 .form-checkbox__desc {
     color: #F3F3F3;
-    font-family: Nunito Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -717,7 +777,7 @@ section{
 .form-checkbox__link{
     text-decoration-line: underline;
     color: #F3F3F3;
-    font-family: Nunito Sans;
+    
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -753,7 +813,7 @@ section{
 
 .contact-item__desc {
     color: #303239;
-    font-family: Nunito Sans;
+    
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -764,12 +824,12 @@ section{
     max-width: 680px;
     max-height: 365px;
     border-radius: 10px;
-    box-shadow: 0px 4px 20px 0px rgba(0, 7, 94, 0.10);
+    box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.10);
 }
 
 .footer {
     background-color: #1A0B73;
-    padding: 70px 0px 60px 0px;
+    padding: 70px 0 60px 0;
 }
 
 .footer-content {
@@ -785,7 +845,7 @@ section{
 
 .footer-company-name {
     color: #FFF;
-    font-family: Nunito Sans;
+    
     font-size: 22px;
     font-style: normal;
     font-weight: 800;
@@ -795,7 +855,7 @@ section{
 
 .footer-copyright {
     color: #B8B8B8;
-    font-family: Nunito Sans;
+    
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -822,7 +882,7 @@ section{
 
 .footer-nav__title {
     color: #B8B8B8;
-    font-family: Nunito Sans;
+    
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -833,7 +893,7 @@ section{
 
 .footer-nav__item {
     color: #FFF;
-    font-family: Nunito Sans;
+    
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -860,7 +920,6 @@ section{
 .footer-link {
     color: #B8B8B8;
     text-align: right;
-    font-family: Nunito Sans;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -869,6 +928,114 @@ section{
 
 @media screen and (max-width: 320px) {
     .container {
-        padding: 0px 10px;
+        margin: 0 10px;
+    }
+
+    .section-title{
+        font-size: 22px;
+    }
+
+    .header-top{
+        display: none;
+    }
+
+    .header-nav{
+        display: none;
+    }
+
+    .header-btn{
+        display: none;
+    }
+
+    #search{
+        display: none;
+    }
+
+    #burger{
+        display: block;
+    }
+
+    .products-list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .products-item{
+        padding: 20px 19px;
+    }
+
+    .product-img{
+        width: 110px;
+        height: 102px;
+    }
+
+    .products-name{
+        font-size: 16px;
+    }
+
+    .hit-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .hit-card{
+        padding: 15px 9px 15px 15px;
+    }
+
+    .hit-card__img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .hit-name{
+        white-space: nowrap;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .state-name{
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .hit-price{
+        flex-direction: column;
+    }
+
+    .card-btn{
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding:19px 8px 18px 8px;
+    }
+
+    .contacts{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .map{
+        width: 300px;
+        height: 365px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+    }
+
+    .footer-nav{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-nav__block{
+
     }
 }
