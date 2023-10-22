@@ -242,7 +242,6 @@ section{
 
 .main {
     margin: 40px 0 80px 0;
-    min-height: 100vh
 }
 
 .banners {
@@ -256,6 +255,7 @@ section{
     display: flex;
     justify-content: space-between;
     background: url(".././img/general-images/slider-bg.jpg") no-repeat;
+    background-size:100% 100%;
     border-radius: 10px;
     box-shadow: 0 4px 20px 0 rgba(0, 7, 94, 0.10);
     max-width: 780px;
@@ -271,7 +271,6 @@ section{
 
 .slider-title{
     color: #FFFFFF;
-    
     font-size: 38px;
     font-style: normal;
     font-weight: 800;
@@ -283,7 +282,6 @@ section{
 .slider-desc {
     margin-top: 20px;
     color: #FFF;
-    
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -832,6 +830,10 @@ section{
     padding: 70px 0 60px 0;
 }
 
+.footer-mobile{
+    display: none;
+}
+
 .footer-content {
     display: flex;
     justify-content: space-between;
@@ -845,7 +847,6 @@ section{
 
 .footer-company-name {
     color: #FFF;
-    
     font-size: 22px;
     font-style: normal;
     font-weight: 800;
@@ -855,7 +856,6 @@ section{
 
 .footer-copyright {
     color: #B8B8B8;
-    
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -931,6 +931,10 @@ section{
         margin: 0 10px;
     }
 
+    section{
+        margin-bottom: 60px;
+    }
+    
     .section-title{
         font-size: 22px;
     }
@@ -953,6 +957,108 @@ section{
 
     #burger{
         display: block;
+    }
+    
+    .banners{
+        flex-direction: column;
+    }
+
+    .slider{
+        background: url(".././img/general-images/slider-bg-mobile.jpg") no-repeat;
+        background-size:100% 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 16px 20px 30px;
+    }
+
+    .slider-title {
+        color: #FFF;
+        width: 199px;
+        font-family: Nunito Sans;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .slider-desc {
+        font-family: Nunito Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .slider-btn {
+        padding: 14px 26px 13px 26px;
+    }
+    
+    .pagination {
+        margin: auto;
+    }
+
+    .banner-profitable {
+        background: url(".././img/general-images/banner-bg-mobile.jpg") no-repeat;
+        background-size:100% 100%;
+        width: 300px;
+        height: 246px;
+        padding: 30px 30px 20px 30px;
+    }
+
+    .banner-title {
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    .banner-info {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .banner-procent {
+        font-size: 38px;
+        font-weight: 700;
+    }
+    .banner-desc {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    .banner-btn__title {
+        font-size: 14px;
+    }
+
+    .advantages {
+        background: url(".././img/general-images/advantages-mobile.jpg") no-repeat;
+        background-size:100% 100%;
+        padding: 30px 26px 26px 32.28px;
+        width: 100%;
+        height: 818px;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .advantages-title {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 800;
+        width: 242px;
+    }
+
+    .advantages-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .advantages-item {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
     }
 
     .products-list{
@@ -997,6 +1103,10 @@ section{
         line-height: normal;
     }
 
+    .hit-pagination{
+        display: none;
+    }
+
     .state-name{
         font-size: 10px;
         font-style: normal;
@@ -1008,6 +1118,39 @@ section{
         flex-direction: column;
     }
 
+    .about-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-desc__text {
+        width: 300px;
+    }
+
+    .about-right {
+        width: 300px;
+        height: 191px;
+    }
+
+    .about-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .about-bottom__item {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-item__img {
+    }
+
+    .about-item__desc {
+    }
+
     .card-btn{
         font-size: 10px;
         font-style: normal;
@@ -1016,14 +1159,76 @@ section{
         padding:19px 8px 18px 8px;
     }
 
+    .form-block {
+        background: url(".././img/general-images/form-bg-mobile.jpg") no-repeat;
+        background-size:100% 100%;
+        padding: 30px;
+    }
+
+    .form-title {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    .form-desc {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .form-top {
+        flex-direction: column;
+    }
+
+    .form-input {
+    }
+    .form-submit {
+    }
+    .btn-ligth {
+    }
+    .form-checkbox__block {
+    }
+    .form-checkbox {
+    }
+    .form-checkbox__desc {
+    }
+    .form-checkbox__link {
+    }
+
     .contacts{
         flex-direction: column;
         gap: 30px;
     }
 
     .map{
+        background: url(".././img/general-images/map-mobile.jpg") no-repeat;
+        background-size:100% 100%;
         width: 300px;
         height: 365px;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .footer-mobile{
+        padding: 40px 0px 30px 40px;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        background: #18154B;
+    }
+
+    .footer-head{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-btn{
+        padding: 14px 33px 13px 33px;
+        max-width: 180px;
     }
 
     .footer-content{
@@ -1031,11 +1236,13 @@ section{
     }
 
     .footer-nav{
+        display: flex;
         flex-direction: column;
+        align-items: start;
         gap: 40px;
     }
 
-    .footer-nav__block{
-
+    .footer-links{
+        align-items: start;
     }
 }
