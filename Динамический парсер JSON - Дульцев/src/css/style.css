@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("/src/fonts/NunitoSans-Variable.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #d8d8da;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+input, select{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+button{
+    border: none;
+}
+
+.btn-default{
+    text-transform: uppercase;
+    background: #2F3ECC;
+    color: #FFFFFF;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn-default:hover{
+    background: #FFFFFF;
+    color: #2F3ECC;
+    transition: all .3s;
+    box-shadow: 0px 4px 30px #2F3ECC;
+}
+
+section{
+    padding:0 200px;
+}
+
+.header{
+    background: #FFFFFf;
+    position: sticky;
+    padding: 20px 0;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav__item {
+    color: #2F3ECC ;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.nav__item:hover{
+    text-shadow: 0px 4px 30px #2F3ECC;
+    transition: all .3s;
+}
+
+.auth {
+    display: flex;
+    gap: 10px;
+}
+
+.form-post{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-name{
+    color: #2F3ECC;
+    text-transform: uppercase;
+}
+
+.form-lable{
+    color: #2F3ECC;
+}
+
+.form-input{
+    border-radius: 10px;
+    border: 3px solid #2F3ECC;
+}
