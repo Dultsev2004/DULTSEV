@@ -7,23 +7,17 @@
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-    <header class="header">
-        <section class="header-content">
-            <nav class="nav">
-                <a onclick="addPost()" class="nav__item" href="#">Добавление постов</a>
-                <a onclick="colorSheme()" class="nav__item" href="#">Цветовая схема</a>
-                <a onclick="interview()" class="nav__item" href="#">Интервью</a>
-            </nav>
-            <div class="auth">
-                <button onclick="loginIn()" class="btn-default">Авторизация</button>
-                <button onclick="register()" class="btn-default">Регистрация</button>
-            </div>
-        </section>
-    </header>
     <main class="main">
-
+        <section class="form-switcher__block">
+            <h2 class="section-title">Загрузить JSON файл</h2>
+            <form action="#" method="post" class="form-switcher__form">
+                <input class="form-switcher__input" type="file" onchange="readJSON(this)">
+                <input class="btn-default" type="submit">
+            </form>
+            <article class="form-render">
+            </article>
+        </section>
     </main>
-    <script src="./src/js/addpost.js"></script>
     <script src="./src/js/main.js"></script>
 </body>
 </html>

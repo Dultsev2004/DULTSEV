@@ -1,4 +1,4 @@
-const colorSchemeForm = {
+{
     "name":"website_color_scheme",
     "fields":[
         {

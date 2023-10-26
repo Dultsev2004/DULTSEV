@@ -1,4 +1,4 @@
-const interviewForm = {
+{
     "name":"interview",
     "fields":[
         {
