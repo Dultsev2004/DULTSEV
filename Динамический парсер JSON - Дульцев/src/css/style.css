@@ -3,6 +3,10 @@
     src: url("/src/fonts/NunitoSans-Variable.ttf");
 }
 
+:root{
+    --main--color:#35CA32;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -10,7 +14,7 @@
 }
 
 body{
-    background: #151549;
+    background: #FFFFFF;
     font-family: "Nunito Sans", sans-serif;
 }
 
@@ -30,19 +34,17 @@ button{
 
 .btn-default{
     text-transform: uppercase;
-    background: #2F3ECC;
+    background: var(--main--color);
     color: #FFFFFF;
-    padding: 8px 10px;
-    border-radius: 10px;
+    border-radius: 5px;
+    padding: 8px 20px;
     cursor: pointer;
     transition: all .3s;
 }
 
 .btn-default:hover{
-    background: #FFFFFF;
-    color: #2F3ECC;
     transition: all .3s;
-    box-shadow: 0px 4px 30px #2F3ECC;
+    box-shadow: 0px 4px 30px var(--main--color);
 }
 
 .main{
@@ -55,26 +57,83 @@ button{
     gap: 10px;
 }
 
+.form-switcher__form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .section-title{
     margin-bottom:10px;
     font-size: 20px;
-    color: #2F3ECC;
+    color: var(--main--color);
 }
 
-.form-switcher__form{
-
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.form-switcher__input {
-
+.form-fields{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
 }
 
-.form-switcher__btn{
-
+.form__label{
+    color: var(--main--color);
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
 }
 
-.form-render{
+.form-file__label{
+    text-align: center;
+    background: var(--main--color);
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .3s;
+    max-width: 200px;
+}
 
+.form-file__label:hover{
+    box-shadow: 0px 4px 30px var(--main--color);
+    transition: all .3s;
+}
+
+.form__input[type="file"]{
+    position: absolute;
+    font-size: 100px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+
+.form__input {
+    padding: 8px 3px;
+    border: 2px solid var(--main--color);
+}
+
+.form__input::placeholder {
+    color: var(--main--color);
+}
+
+.form-render__block{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
 section{
@@ -84,24 +143,4 @@ section{
 .auth {
     display: flex;
     gap: 10px;
-}
-
-.form{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.form-name{
-    color: #2F3ECC;
-    text-transform: uppercase;
-}
-
-.form-label{
-    color: #2F3ECC;
-}
-
-.form-input{
-    border-radius: 10px;
-    border: 3px solid #2F3ECC;
 }
