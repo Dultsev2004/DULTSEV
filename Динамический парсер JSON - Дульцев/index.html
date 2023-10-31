@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Динамический парсер JSON - Дульцев</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <main class="main">
+        <section class="form-switcher__block">
+            <h2 class="section-title">Загрузить JSON файл</h2>
+            <form action="#" method="post" class="form-switcher__form">
+                <input class="form-switcher__input" type="file" onchange="readJSON(this)">
+                <input class="btn-default" type="submit">
+            </form>
+            <article class="form-render__block">
+            </article>
+        </section>
+    </main>
+    <script src="./src/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("/src/fonts/NunitoSans-Variable.ttf");
+}
+
+:root{
+    --main--color:#35CA32;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #FFFFFF;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+input, select{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+button{
+    border: none;
+}
+
+.btn-default{
+    text-transform: uppercase;
+    background: var(--main--color);
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn-default:hover{
+    transition: all .3s;
+    box-shadow: 0px 4px 30px var(--main--color);
+}
+
+.main{
+    margin-top:80px;
+}
+
+.form-switcher__block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-switcher__form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-title{
+    margin-bottom:10px;
+    font-size: 20px;
+    color: var(--main--color);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-fields{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.form__label{
+    color: var(--main--color);
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form-file__label{
+    text-align: center;
+    background: var(--main--color);
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .3s;
+    max-width: 200px;
+}
+
+.form-file__label:hover{
+    box-shadow: 0px 4px 30px var(--main--color);
+    transition: all .3s;
+}
+
+.form__input[type="file"]{
+    position: absolute;
+    font-size: 100px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+
+.form__input {
+    padding: 8px 3px;
+    border: 2px solid var(--main--color);
+}
+
+.form__input::placeholder {
+    color: var(--main--color);
+}
+
+.form-render__block{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section{
+    padding:0 200px;
+}
+
+.auth {
+    display: flex;
+    gap: 10px;
+}
